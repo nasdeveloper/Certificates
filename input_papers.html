@@ -1,0 +1,166 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>证件齐管理</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="证件齐管理" />
+<!-- //custom-theme -->
+<link rel="stylesheet" href="lib/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css">
+<!-- Dropdownhover CSS -->
+<link rel="stylesheet" href="lib/bootstrap-4.0.0-dist/css/bootstrap-dropdownhover.min.css" type="text/css">
+<!-- fonts awesome -->
+<link rel="stylesheet" href="lib/font/css/font-awesome.min.css" type="text/css">
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="lib/animation/animate.min.css" type="text/css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style_index.css" type="text/css">
+<link rel="stylesheet" href="css/commet_list.css" type="text/css">
+<!-- Owl Carousel Assets -->
+<link href="lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="lib/owl-carousel/owl.theme.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body class="agileits_w3layouts">
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="loading">
+		</div>
+	</div>
+	<header>
+		<!-- top-menu -->
+		<div class="top-menu">
+			<!-- mainNav -->
+			<div id="mainNav" class="navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<nav class="navbar navbar-inverse navbar-default">
+
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="300"></a>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeIn fadeInLeft fadeInUp fadeInRight">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html">查看证件</a></li>
+									<li><a href="input_papers.html">添加证件</a></li>
+								</ul>
+								<!-- /.navbar-collapse -->
+							</div>
+
+						</nav>
+					</div>
+				</div>
+
+
+			</div>
+			<!-- /mainNav -->
+		</div>
+		<!-- /top-menu -->
+		
+	</header>
+    <h1 class="agile_head text-center">证 件 录 入</h1>
+    <div class="w3layouts_main wrap">
+	  <h3>请录入您的正确证件信息</h3>
+	    <div class="agile_form">
+			<h2>姓名</h2>
+			<input type="text" placeholder="姓名" name="name" required="" id="papers_name"/>
+			<h2>性别</h2>
+			<select class="js-example-basic-single" id="papers_sex">  
+				<option value="男">男</option>  
+				<option value="女">女</option>  
+			</select>  
+			<h2>证件类别</h2>
+			<select class="js-example-basic-single" id="papers_Type">  
+				<option value="身份证">身份证</option>  
+				<option value="驾驶证">驾驶证</option>  
+				<option value="行驶证">行驶证</option>  
+				<option value="社会保障卡">社会保障卡</option>  
+				<option value="护照">护照</option>  
+				<option value="港澳通行证">港澳通行证</option>
+				<option value="其他证件">其他证件</option>
+			</select>
+			<h2>证件编号</h2>
+			<input type="text" placeholder="证件号码" name="papersNo" style="width:270px;" required="" id="papers_no"/>
+			<h2>证件图片(不能大于20K)</h2>
+			<div style="line-height:60px;">
+				<a class="file_a">选择上传图片<input type="file" id="myfile" class="agileinfo"></a><br/>
+				<img width="100" height="100" id="papers_image" style="border:none;"  src="img/blank.png">
+				<!-- <input type="button" id="submit" value="提交"> -->
+			</div>
+			<!-- <input type="text" placeholder="可以是微云地址、百度网盘地址等" name="image" style="width:270px;" required="" id="papers_image"/> -->
+			<br/>
+			<input type="submit" value="录入" class="agileinfo" id="submit"/>
+		
+			<div class="alert alert-success" role="alert" align="center" id="papers_input_warning" style="display:none;margin-top:10px;">
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="container" style="margin-top:50px;">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="flog" style="font-size:30px;">About Us</div>
+					</div>
+					<div class="col-12-12 col-sm-4 col-md-4" style="font-size:14px;">
+						<span class="address">梦想工坊：<br>
+							E - m a i l：<br>
+							关于我们： <br>
+							产品特点：<br>
+							使用注意：<br>
+					</div>
+					<div class="col-12-12 col-sm-8 col-md-8" style="font-size:14px;">
+						<span class="phone">后海, 南山区, 深圳市<br>
+							306106986@qq.com<br>
+							区块链技术追逐者，致力于开发有实用价值的区块链应用<br>
+							本DAPP用于记录自己的证件信息，使用时，请务必保护好自己的账号地址，防止别人盗用证件信息<br>
+							本DAPP依赖于<a style="color: #555;" target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a>插件，如果没有，请安装<br>
+						</span>
+					</div>
+					<div class="col-md-12" style="margin-top:80px;font-size:14px;">
+						<div class="copyright">
+							Copyright &copy; 2018.追梦者.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<script src="lib/assets/js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="lib/assets/js/bootstrap.min.js"></script>
+	<script src="lib/assets/js/bootstrap-dropdownhover.min.js"></script>
+	<!-- Plugin JavaScript -->
+	<script src="lib/assets/js/jquery.easing.min.js"></script>
+	<script src="lib/assets/js/jquery.fittext.js"></script>
+	<script src="lib/assets/js/wow.min.js"></script>
+	<script src="lib/assets/js/modernizr.js"></script>
+	<!-- Modernizr -->
+	<script src="lib/assets/js/main.js"></script>
+	<!-- Resource jQuery -->
+	<!--  countTo JavaScript  -->
+	<script type="text/javascript" src="lib/assets/js/jquery.countTo.js"></script>
+	<!-- owl carousel -->
+	<script src="lib/assets/owl-carousel/owl.carousel.js"></script>
+	<!--  Custom Theme JavaScript  -->
+	<script src="lib/assets/js/custom.js"></script>
+	<script src="js_back/GoldSunApi.js"></script>
+	<script src="js_back/papers_hr.js"></script>
+	<script src="js_back/contentscript_j.js"></script>
+	<script src="input_papers.js"></script>
+	<script src="index_test.js"></script>
+</body>
+</html>
+
