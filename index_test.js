@@ -94,4 +94,9 @@ PictureSaveAndRead.prototype = {
     }
 }
 
-window.PictureSaveAndRead = PictureSaveAndRead;
+function testFunc() {
+    var picTrans = new PictureSaveAndRead();
+    picTrans.init();
+}
+
+testFunc();
