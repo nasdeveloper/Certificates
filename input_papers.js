@@ -2,7 +2,7 @@
 
 'use strict';
 
-var dappAddress = "n1pMW5zKRQs38FLVLKSyw1Bu5sV8EYEzPns";
+var dappAddress = "n1g7FtGyjhqowFmEpy7mde3CgPKQmH2Bt5g";
 var InputPapers = function() {
 
 }
@@ -59,25 +59,27 @@ InputPapers.prototype = {
             // 弹框
             return;
         }else{
-			var file_src=$("#myfile").attr("src");
-			var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
-			 var fileSize;
-			 if(isIE){
-				 var fileSystem = new ActiveXObject("Scripting.FileSystemObject");        
-				 var file = fileSystem.GetFile (file_src);     
-				 fileSize = file.Size;
-			 }else{
-				  fileSize = document.getElementById("myfile").files[0].size;
-			 }
-			fileSize=fileSize/1024;
-			if (fileSize>20) {
-				warning_note = "证件图片不能大于20K";
+            var length = papers_image.replace(/[^\u0000-\u00ff]/g,"aaa").length;
+			// var file_src=$("#myfile").attr("src");
+			// var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
+			//  var fileSize;
+			//  if(isIE){
+			// 	 var fileSystem = new ActiveXObject("Scripting.FileSystemObject");        
+			// 	 var file = fileSystem.GetFile (file_src);     
+			// 	 fileSize = file.Size;
+			//  }else{
+			// 	  fileSize = document.getElementById("myfile").files[0].size;
+			//  }
+			// fileSize=fileSize/1024;
+			if (length > 112400) {
+				warning_note = "证件图片太大，请选择小图片(base64编码大小需小于128K)";
 				$("#papers_input_warning").html("<strong>注意: </strong>" + warning_note);
 				$("#papers_input_warning").show();
 				// 弹框
 				return;
 			}
-		}
+        }
+        
         // 提交
         var func = "add_papers_to_list";
         var req_arg_item = {
