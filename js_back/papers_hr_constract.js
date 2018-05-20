@@ -119,11 +119,6 @@ PapersSys.prototype = {
             type:"papersList",
             data : []
         };
-        from = from.trim();
-        if(from===""){
-            result.success = false;
-            return result;
-        }
         var number = this.papers_list_size;
         var papers;
         var key;
@@ -131,7 +126,15 @@ PapersSys.prototype = {
             key = this.papers_list_array.get(i);
             papers = this.papers_list.get(key);
             if(papers&&from==papers.from){
-                result.data.push(papers);
+                var temp = {
+                    name: papers.name,
+                    sex: papers.sex,
+                    papersType: papers.papersType,
+                    papersNo: papers.papersNo,
+                    time: papers.time,
+                    from: papers.from
+                };
+                result.data.push(temp);
             }
         }
         if(result.data === ""){
