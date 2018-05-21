@@ -66,7 +66,7 @@ PictureSaveAndRead.prototype = {
         canvas.height = img_obj.height;
         var ctx = canvas.getContext("2d");
         ctx.drawImage(img_obj, 0, 0, canvas.width, canvas.height);
-        var data_url = canvas.toDataURL();
+        var data_url = canvas.toDataURL('image/jpeg');
         return data_url;
     },
 

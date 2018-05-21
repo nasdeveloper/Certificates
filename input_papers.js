@@ -70,7 +70,8 @@ InputPapers.prototype = {
 			//  }else{
 			// 	  fileSize = document.getElementById("myfile").files[0].size;
 			//  }
-			// fileSize=fileSize/1024;
+            // fileSize=fileSize/1024;
+            console.log(length);
 			if (length > 112400) {
 				warning_note = "证件图片太大，请选择小图片(base64编码大小需小于128K)";
 				$("#papers_input_warning").html("<strong>注意: </strong>" + warning_note);
